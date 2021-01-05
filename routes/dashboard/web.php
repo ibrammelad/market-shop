@@ -16,6 +16,8 @@ Route::group(
     Route::group(['prefix'=>'dashboard' ] , function (){
 
         Route::get('/',[dashboardController::class,'index'])->name('dashboard.index');
+        Route::get('/',[dashboardController::class,'show'])->name('dashboard.show');
+
     });
 });
 
