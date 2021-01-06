@@ -222,10 +222,10 @@
         </nav>
 
     </header>
-
     @include('layouts.dashboard._aside')
 
     @yield('content')
+
 
     @include('partials._session')
 
